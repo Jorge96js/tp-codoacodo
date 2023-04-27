@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    outline: none!important;
+}
+
+.texto-verde{
+    color: #005304!important;
+}
+
+
+p{
+    margin: 0!important;
+}
+
+a{
+    color: #fff!important;
+    text-decoration: none!important;
+}
+
+
+header{
+    background-image:url('img/ba1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50rem;
+    width: 100%;
+    overflow: hidden;
+}
+header::after{
+    position: relative;
+    display: block;
+    content: '';
+    background: #0000008c;
+    height: 100%;
+    width: 100%;
+}
+
+.navbar{
+    height: auto;
+}
+
+.contenido-header{
+    position: absolute;
+    text-align: right;
+    width: 50%;
+    color: #fff;
+    right: 5rem;
+    top: 20rem;
+    z-index: 2;
+}
+
+.card{
+    text-align: left;
+}
+
+.seccion{
+    width: 100%;
+}
+.seccion .cl6{
+    margin: 0;
+    padding: 0!important;
+}
+
+.pdd{
+    padding: 10px;
+}
+
+.campo{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0;
+}
+
+.campo input{
+    margin: .5rem;
+}
+
+.titulo-charla{
+    font-weight: 400;
+}
+
+.titulo-charla span{
+    border-bottom: 2px dashed;
+}
+
+.menu-nav{
+    text-align: center;
+    width: 150rem;
+}
+
+.menu-nav li{
+    display: inline;
+    font-weight: 400;
+    color: #FFF;
+    cursor: pointer;
+    margin: 5px;
+}
+
+
+button span{
+    font-size: 2rem;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    background-image: linear-gradient(to left, #051937, #102142, #1a294d, #253258, #2f3b64);
+    margin: 1rem 0 0 0;
+    padding-top: 6rem;
+    
+}
+
+.navbar-brand img{
+    width: 4rem;
+}
+
+.nav-footer{
+    list-style: none;
+    display: inherit;
+}
+
+.nav-footer li{
+    display: inline-block;
+    margin: 10px;
+    width: 6rem;
+    text-align: center;
+}
+
+
+
+
+
+@media (max-width: 575px) {
+    
+    header{
+        height: 50rem;
+    }   
+
+    header::after{
+        height: 100%;
+        width: 100%;
+    }
+
+    nav{
+        height: 3rem;
+    }
+
+    .navbar{
+        justify-content: center!important;
+    }
+
+    .contenido-header {
+        position: absolute;
+        text-align: right;
+        width: 22rem;
+        color: #fff;
+        right: 1rem;
+        top: 20rem;
+        z-index: 2;
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 690px) {
+    
+    .menu-nav{
+        width: 20rem;
+    }
+
+    .menu-nav li{
+        display: block;
+
+    }
+
+    .nav-footer{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
